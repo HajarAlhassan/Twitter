@@ -1,0 +1,39 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<nav class="row navbar navbar-inverse navAnimation text-white" >
+    <div class="container-fluid" >
+        <div class="navbar-header"  >
+           <div class="navbar-brand brand"  style="margin-left:10px;color:white">
+                <img src="/images/logo.png" width="120px" height="120px" style="display:inline; margin-top:2px">
+<!--                <i class="fab fa-twitter" style="color:purple"></i>-->
+<h3 style="margin-top:0px">Hajar's Twitter</h3>
+</div>
+        </div>
+
+        <div id="navbar " class="my-4" style="color:white">
+            <ul class="nav navbar-nav" sec:authorize="isAuthenticated()">
+                <li><a href="/tweets">Home</a></li>
+                <li><a href="/users">All</a></li>
+                <li><a href="/tweets/new">New Tweet</a></li>
+            </ul>
+
+
+            <ul class="nav navbar-nav navbar-right">
+                <li sec:authorize="isAuthenticated()" ><a style="pointer-events: none;color:purple;font-size:25px">
+                    @<span sec:authentication="name" ></span></a>
+                <li sec:authorize="isAuthenticated()"><a href="../logout">Logout</a></li>
+                <li sec:authorize="!isAuthenticated()"><a href="../login">Login</a></li>
+                <li sec:authorize="!isAuthenticated()"><a href="../signup">Sign up</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--</body>-->
+<!--</html>-->

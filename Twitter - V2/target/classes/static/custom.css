@@ -1,0 +1,224 @@
+a.username {
+    color: purple;
+}
+
+a.tag {
+    color: #ff80ff;
+}
+
+body{
+color:white;
+ background:  url("/images/1.jpg") repeat;
+ width:100%;
+ background-size: contain;background-size: 100%; background-size: 100vw 100vh;
+
+}
+#feed{
+color:white;
+ background:  url("/images/background.jpg") repeat;
+ width:100%;
+ background-size: contain;background-size: 100%; background-size: 100vw 100vh;
+
+}
+.brand{
+color:white;
+text-align:center;
+font-family: 'Aclonica', sans-serif;
+}
+.nav{
+margin-right:30px;
+margin-left:30px;
+color:white;
+font-size:20px;
+font-weight:bold;}
+li a{
+color:white;
+
+}
+a:active,a:visited{
+color:white;
+}
+.navbar-right li a{
+margin-right:15px;
+margin-left:10px;
+background-color:#ff80ff;
+
+color:white;
+}
+
+.tag a{
+color:purple;
+}
+.followBtn{
+background-color:#ff80ff;
+color:white;
+font-weight:bold;
+width:100px;
+height:50px;
+
+}
+.tweet{
+padding:5px;
+background-color:#33cccc;
+color:black;
+font-size:25px;
+  border: 1px solid;
+  box-shadow: 5px 10px 20px purple inset;
+ border-radius:10px;
+
+}
+.userTweet{
+padding:10px;
+color:black;
+font-size:25px;
+  border: 1px solid;
+  box-shadow: 5px 10px 20px purple inset;
+ border-radius:10px;
+
+}
+.loginUser{
+
+background-color:#33cccc;
+color:black;
+  border: 1px solid;
+  box-shadow: 5px 10px 20px purple inset;
+
+
+}
+.fontShadow{
+color:white;
+text-align:center;
+text-shadow: 2px 2px #ff80ff ;
+font-family: 'Aclonica', sans-serif;
+}
+button{
+background-color:#ff80ff;
+color:white;
+font-weight:bold;
+
+}
+.btn {
+  position: relative;
+  color: purple;
+  font-size:20px;
+ text-shadow: 2px 2px #ff80ff ;
+ font-family: 'Aclonica', sans-serif;
+  line-height: 64px;
+  transition: all 0.3s;
+  span {
+    transition: all 0.3s;
+    tranform: scale(100%, 100%);
+  }
+}
+
+.btn::before, .btn::after {
+  content: '';
+  position: absolute;
+  transition: all 0.3s;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.btn-two::before, .btn-two::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-two:hover::after {
+  animation-name: rotatecw;
+  animation-duration: 2s;
+}
+.btn-two:hover::before {
+  animation-name: rotateccw;
+  animation-duration: 3s;
+}
+.btn-two:hover::after, .btn-two:hover::before {
+  left: 43%;
+  width: 64px;
+
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotatecw {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes rotateccw {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-360deg);}
+}}
+
+
+ @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+     .navAnimation {
+       font-family: 'Raleway', Arial, sans-serif;
+       text-align: center;
+       text-transform: uppercase;
+       font-weight: 500;
+       letter-spacing: 1px;
+     }
+     .navAnimation * {
+       -webkit-box-sizing: border-box;
+       box-sizing: border-box;
+       -webkit-transition: all 0.35s ease;
+       transition: all 0.35s ease;
+     }
+     .navAnimation li {
+       display: inline-block;
+       list-style: outside none none;
+
+       padding: 0;
+     }
+     .navAnimation a {
+       padding: 0.3em 0;
+       color: rgba(255, 255, 255, 0.5);
+       position: relative;
+       text-decoration: none;
+       display: inline-block;
+     }
+     .navAnimation a:before,
+     .navAnimation a:after {
+       height: 3px;
+       position: absolute;
+       content: '';
+       -webkit-transition: all 0.35s ease;
+       transition: all 0.35s ease;
+       background-color: #9b59b6;
+       width: 0;
+     }
+     .navAnimation a:before {
+       top: 0;
+       left: 0;
+     }
+     .navAnimation a:after {
+       bottom: 0;
+       right: 0;
+     }
+     .navAnimation a:hover,
+     .navAnimation .current a {
+       color: #ffffff;
+       font-size:30px;
+        padding:20px;
+     }
+     .navAnimation a:hover:before,
+     .navAnimation .current a:before,
+     .navAnimation a:hover:after,
+     .navAnimation .current a:after {
+       width: 100%;
+     }
+
+
+
+
